@@ -13,7 +13,7 @@ app.use('/' , quesRoute);
 
 
 // const PORT = 8000
-app.listen(process.env.PORT , ()=>{
+app.listen(process.env.PORT || 4000, ()=>{
     connectDB();
     console.log(`Server started at ${process.env.PORT}`);
 })
